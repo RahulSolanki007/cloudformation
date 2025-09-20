@@ -23,6 +23,9 @@ jobs:
           role-to-assume: arn:aws:iam::963258722155:role/cloudformation@123
           aws-region: us-east-1 # Change if needed
 
+      - name: Test AWS Identity
+        run: aws sts get-caller-identity
+
       - name: Deploy CloudFormation stack
         run: |
           aws cloudformation deploy \
