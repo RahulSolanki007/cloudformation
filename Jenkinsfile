@@ -2,8 +2,7 @@ pipeline {
     agent any  // Runs on any available Jenkins agent
     environment {
         // Jenkins credentials IDs for AWS
-        AWS_ACCESS_KEY_ID = credentials('Access key 1')
-        AWS_SECRET_ACCESS_KEY = credentials('AKIA6ARVRU5V74CEIDIW')
+        STACK_NAME = 'my-stack'
         AWS_DEFAULT_REGION = 'ap-south-1'
     }
 
